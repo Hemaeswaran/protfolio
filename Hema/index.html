@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Hi, I'm <span>Hema</span></h1>
+        <p>Aspiring Web Developer | Designer | Freelancer</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer with skills in frontend and backend development.</p>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <p> </p>
+        <div class="project-container">
+            <div class="project-card">
+                
+                <h3>To-do-list</h3>
+                <p>A simple CRUD (Create, Read, Update, Delete) app.</p>
+            </div>
+            <div class="project-card">
+                <h3>Calculator</h3>
+                <p> basic web-based calculator.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: Hema2025@example.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Hema. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    .project-card{
+        margin-bottom: 20px;
+    }
+    body {
+        background: #1e1e2f;
+        color: white;
+        text-align: center;
+    }
+    header {
+        background: #111;
+        padding: 15px 0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+    nav ul li {
+        margin: 0 15px;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    .hero {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #8b87dc, #fad0c4);
+        color: #222;
+    }
+    .hero span {
+        color: #ff4a57;
+        font-weight: bold;
+    }
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    .btn {
+        background: #ff4a57;
+        padding: 10px 20px;
+        margin-top: 20px;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    .btn:hover {
+        background: #e83e50;
+    }
+    .about, .projects, .contact {
+        padding: 50px;
+        background: #b5a3f1;
+    }
+    .projects h2{
+        margin-bottom:30px;
+    }
+    .about h2{
+
+        margin-bottom: 30px;
+    }
+    .project-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .project-card {
+        background: #333;
+        padding: 20px;
+        border-radius: 10px;
+        width: 200px;
+    }
+    footer {
+        background: #111;
+        padding: 10px;
+    }
+</style>
